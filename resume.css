@@ -1,0 +1,802 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+::selection{
+    background-color:wheat;
+    color:black;
+    
+}
+:root{
+    --square-btn-color:rgb(0, 89, 255);
+    --text-color:black;
+    --btn-text-color:white;
+    --box-color:white;
+    --header-footer-bg-color:white;
+    --maincolor:wheat;
+    --bluecolor:rgb(0, 89, 255);
+    
+
+}
+.Light-Dark-Mode{
+    --square-btn-color:rgb(255, 255, 255);
+    --text-color:rgb(255, 255, 255);
+    --btn-text-color:rgb(0, 0, 0);
+    --box-color:rgb(0, 0, 0);
+    --header-footer-bg-color:rgb(0, 0, 0);
+    --maincolor:rgb(204, 183, 144);
+    --bluecolor:rgb(0, 89, 255);
+}
+ 
+
+/* common css start */
+ 
+.square{
+    background-color: var(--square-btn-color);
+    width: 24px;
+    height: 22px;
+    border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+    cursor: pointer;
+}
+.btn{
+    background-color: var(--square-btn-color);
+    padding:0.5rem 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    color:var(--btn-text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(255, 255, 255); 
+    color:black;   
+    border: 0.1rem solid rgb(0, 89, 255);  
+}
+    
+    
+
+#header-customization{
+    display: flex;
+    flex-wrap: wrap;
+    width:100vw;
+    height:6rem;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.4rem;
+    background-color:var(--header-footer-bg-color);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    color:var(--text-color);
+    
+}
+.logo{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    width: 35%;
+}
+.logo-text{
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0px;
+    /* text-shadow: 0px 0px 2px rgb(63, 151, 192); */
+}
+.slash{
+    font-size:1rem;
+    text-shadow: 1px 1px 0px var(--text-color);
+}
+.logo-spare-text{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+#nav-link{
+   display: flex;
+   z-index: 1;
+}
+#hamburger-toggle{
+    display:none;
+ }
+.ul-items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+   
+}
+
+nav ul li {
+    padding:0rem 0.6rem;
+    color:var(--text-color);
+    flex-wrap: wrap;
+    text-decoration: none;
+    
+}
+nav ul li :hover {
+    color:rgb(0, 89, 255);
+    transition: color 0.60s;
+    cursor: pointer;
+}
+nav ul li a {
+    font-weight: bold;
+    letter-spacing:1px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color:var(--text-color);
+}
+#icon {
+    width:auto;
+    height: auto;
+    margin-left:0.7rem;
+    cursor:pointer;
+    position:relative;
+}
+    
+
+#resume{
+    height:200vh ;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: var(--maincolor);
+    font-size: 1rem;
+}
+#resume h2{ 
+    font-size: 2rem;
+}
+
+#R-Mainheding{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12rem;
+    font-size: 1rem;
+}
+#resume #R-Subheding{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:45vw;
+  
+    font-size: 1.6rem;
+}
+
+.Education{
+    width:45vw;
+    height: 40vh;
+    background-color: var(--box-color);
+    display:flex;
+    padding:1rem;
+    overflow-x: hidden;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+}
+
+.year{
+    font-size:1rem;
+    color:var(--text-color);
+    
+    flex:1;
+    text-transform: capitalize;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.year h1{
+    font-size:2.2rem;
+    color:rgb(0, 89, 255);
+    font-weight:bold;
+    line-height: 3rem;
+    text-decoration: underline;
+}
+.year h4{
+   
+    padding-top: 0.8rem;
+    
+}
+.year h3{
+    font-size:1rem;
+    color:rgb(0, 89, 255);
+    font-weight:bold;
+    line-height: 3rem;
+    
+}
+.details{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    word-spacing: 0.1rem;
+    color:var(--text-color);
+}
+#SkillSet{
+    width:45vw;
+    height: 50vh;
+    background-color: var(--box-color);
+    color:var(--text-color);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    word-spacing: 0.5rem;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+}
+#SkillSet .square{
+    background-color: rgb(0, 89, 255);
+    width: 15px;
+    height: 15px;
+    scroll-behavior: smooth ;
+
+}
+#Skill{
+    display: flex;
+    justify-content: space-evenly;
+}
+#Language{
+    display: flex;
+    justify-content: space-evenly;
+}
+#Skill span{
+    display: flex;
+    justify-content: space-evenly;
+    width:8rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Language span{
+    display: flex;
+    justify-content: space-evenly;
+    width:8rem;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+footer{
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content:center;
+    padding: 0px;
+    align-items:center;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    background-color:var(--header-footer-bg-color);
+    color:var(--text-color);
+    
+}
+footer div {
+    padding: 0px 30px;
+    letter-spacing:2px;
+    word-spacing: 5px;
+    cursor:pointer;
+}
+
+
+
+
+/* For Mobile Devices */
+
+
+@media (min-width:279px) and (max-width:750px){
+  
+    .square{
+     
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    .btn{
+        padding:0.4rem 0.5rem;
+        border-radius: 3rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+    }
+    .btn:hover {
+        background-color: rgb(255, 255, 255); 
+        color:black;   
+        border: 0.1rem solid rgb(0, 89, 255);  
+    }
+    
+    body{
+        margin:0.5px;
+    }
+
+    /* Header Start */
+    #header-customization{
+        width: 100%;
+        height: 104px;
+        justify-content: space-around;
+        padding: 0px;  
+    }
+    .logo{
+        width: 60%;
+        justify-content:center;
+        column-gap:1rem;
+    }
+    .logo-text{
+        font-size: 1rem;
+    }
+    .slash{
+        font-size:18px;
+        text-shadow: 1px 1px 0px var(--text-color);
+    }
+    .logo-spare-text{
+        font-size: 0.5em;
+    }
+
+    #nav-link{
+        z-index: 100;
+     }
+    #hamburger-toggle{
+         display:block;
+         cursor:pointer;
+         color:var(--text-color);
+      }
+    #hamburger-toggle:hover{
+         color: rgb(0, 89, 255);
+         cursor:pointer;
+      }
+    .ul-items{
+         display: none;
+         justify-content: center;
+         height:100vh;
+    }
+    .toggle-nav-items{
+        display: grid;
+        place-items:center;
+        position:fixed;
+        top:0;
+        right:0;
+        background-color:rgba(0,0,0,0.9);
+        width:40%;
+        height:100vh;
+        z-index:-100;
+        padding:2rem;
+       padding-top:3rem;
+    }
+    
+     nav ul li a {
+         font-size: 0.7rem;
+         color:rgb(221, 207, 207);
+         padding:0rem;
+     }
+     nav ul li a:hover {
+        color:rgb(0, 89, 255);    
+     }
+     #icon {
+        display:block;
+        color:white;
+     }
+     /* Header End */
+
+
+
+    /* Main Part  */
+    #resume{
+        font-size: 0.7rem;
+    }
+    #resume h2{
+        
+        font-size: 1rem;
+    }
+    
+    #resume #R-Subheding{
+        width:80vw;
+        font-size: 1.6rem;
+    
+    }
+    
+    .Education{
+        width:80vw;
+        height: 30vh;
+        padding:0.5rem;
+        overflow: hidden;
+        justify-content:space-evenly;
+    }
+    
+    .year{
+        font-size:0.5rem;
+        flex:0.5;
+        text-transform: uppercase;
+        margin-top:0.5rem;
+    }
+    .year h1{
+        font-size:0.8rem;
+        line-height: 0.7rem;
+    }
+    .year h3{
+        font-size:0.5rem;
+        line-height: 1.3rem;   
+    }
+    .details{
+        padding-top:0.5rem;
+        padding-right: 0rem;
+        margin-left: 1rem;
+        font-size:0.5rem;
+    }
+    .details p:nth-child(2){
+        display:none;
+        padding-right: 0rem;
+        padding-top: 0rem;
+       
+    }
+    #SkillSet{
+        width:80vw;
+        height: 50vh;
+        padding:0.5rem;
+        overflow: hidden;
+    }
+    /* Main End */
+   
+
+    /* Footer start */
+    footer{
+        height: 10vh;      
+    }
+    footer .none{
+        display:none;     
+    }
+     footer .fa{
+        font-size: 1.5rem;      
+    }
+    footer div {
+        padding: 0rem 1rem;
+        letter-spacing:2px;
+        word-spacing: 5px;
+        cursor:pointer;
+    }
+    /* Footer End */
+}
+@media (min-width:450px) and (max-width:750px){
+    .details{
+        font-size:0.7rem;
+    }
+    .details p:nth-child(2){
+        display:block;
+        padding-right: 0rem;
+        padding-top: 0rem; 
+    }
+
+}
+
+
+
+/* Medium Devices */
+
+@media (min-width:751px) and (max-width:1024px){
+
+    .square{ 
+        width: 1rem;
+        height: 1rem;
+    }
+    .btn{
+        padding:0.5rem 0.8rem;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+    }
+    #header-customization{
+    width: 100%;
+    height: 104px;
+    justify-content: space-between;
+    padding: 0rem 1rem;  
+    }
+    .logo{
+    width: 40%;
+    justify-content:space-around;
+    }
+    .logo-text{
+    font-size: 1.2rem;
+    }
+    .slash{
+    font-size:1.2rem;
+
+    }
+    .logo-spare-text{
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    }
+
+    #nav-link{
+    display: flex;
+    z-index: 100;
+    }
+    #hamburger-toggle{
+        display:block;
+        cursor:pointer;
+        color:var(--text-color);
+    }
+    #hamburger-toggle:hover{
+        color: rgb(0, 89, 255);
+        cursor:pointer;
+    }
+    .ul-items{
+        display: none;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        height:100vh;
+    }
+    .toggle-nav-items{
+        display: grid;
+        place-items:center;
+        position:fixed;
+        top:0;
+        right:0;
+        background-color:rgba(0,0,0,0.9);
+        width:40%;
+        height:100vh;
+        z-index:-100;
+        padding:2rem;
+        padding-top:3rem;
+    }
+
+    nav ul li a {
+        font-weight: bold;
+        letter-spacing:1px;
+        font-size: 0.8rem;
+        color:rgb(221, 207, 207);
+        padding:0rem;
+    }
+    nav ul li a:hover {
+        color:rgb(0, 89, 255);    
+    }
+    #icon {
+        display:block;
+        color:white;
+    }
+    /*Header End */ 
+
+    #resume{
+        font-size: 1rem;
+    }
+    #resume h2{ 
+        font-size: 1.5rem;
+    }
+    #resume #R-Subheding{
+        width:70vw;
+        font-size: 1.6rem;
+    }
+    .Education{
+        width:70vw;
+        height: 45vh;
+        display:flex;
+        padding:1rem;
+        overflow: hidden;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+    }
+    .year{
+        font-size:0.6rem;
+        flex:0.5;
+        margin-top:0.2rem;
+        flex-wrap: wrap;
+    }
+    .year h1{
+        font-size:1.5rem;
+        line-height: 1rem;
+        padding-top: 1rem;
+    }
+    .year h4{
+        font-size:0.6rem;
+        padding-top:0.9rem;
+    }
+    .year h3{
+        font-size:0.6rem;
+        line-height: 1.3rem;  
+        padding-top:0.2rem; 
+    }
+    .details{
+        padding-top:0.4rem;
+        padding-right: 0rem;
+        margin-left: 1rem;
+        font-size:0.9rem;
+    }
+ 
+    #SkillSet{
+        width:70vw;
+        height: 45vh;
+        padding:1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+
+    #SkillSet .square{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    #SkillSet h1{
+        font-size:1.2rem;
+    }
+    /* Main End */
+
+
+  /* Footer Start */
+    footer{
+        height: 4rem;
+        column-gap: 2rem;
+        padding-top: 10px;   
+        justify-content: center; 
+    }
+    footer .none{
+    display: none;
+    }
+    /* Footer End */
+    
+}
+
+/* XL Devices  */
+
+    @media (min-width:1024px) and (max-width:1420px){
+
+        .square{
+            width: 1rem;
+            height: 1rem;
+        }
+    
+    
+        #header-customization{
+            padding:0.3rem;
+            font-size:1rem;
+        }
+        .logo{
+            justify-content:space-evenly;
+            padding: 0px;
+            width: 34%;
+        }
+        .logo-text{
+            font-size: 1.3rem;
+            letter-spacing: 0px;
+        }
+        .slash{
+            font-size:1rem;
+        }
+        .logo-spare-text{
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            font-weight: normal;
+        }
+    
+        .ul-items{
+            justify-content: space-around;
+        }
+    
+        nav ul li {
+            padding:0rem 0.7rem; 
+        }
+    
+        nav ul li a {
+            font-weight: normal;
+        }
+        #icon {
+        
+            margin-left:0.3rem;
+            margin-right:0.7rem;
+        }
+        #icon .fas{
+        font-size:1.5rem;
+        }
+        /* header end */
+    
+        #resume{
+            font-size: 2rem;
+        }
+        #resume h2{ 
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+        #resume #R-Subheding{
+            width:50vw;
+            font-size: 1.6rem;
+        }
+        .Education{
+            width:50vw;
+            height: 45vh;
+            display:flex;
+            padding:1rem;
+            overflow: hidden;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+        }
+        .year{
+            font-size:0.8rem;
+            flex:0.5;
+            margin-top:0.2rem;
+            flex-wrap: wrap;
+        }
+        .year h1{
+            font-size:1.5rem;
+            line-height: 1rem;
+            padding-top: 1rem;
+        }
+        .year h4{
+            font-size:0.8rem;
+            padding-top:1.2rem;
+        }
+        .year h3{
+            font-size:0.7rem;
+            line-height: 1.3rem;  
+            padding-top:0.3rem; 
+        }
+        .details{
+            padding-top:0.4rem;
+            padding-right: 0rem;
+            margin-left: 1rem;
+            font-size:0.8rem;
+        }
+     
+        #SkillSet{
+            width:50vw;
+            height: 45vh;
+            padding:1rem;
+            overflow: hidden;
+            font-size: 0.8rem;
+        }
+    
+        #SkillSet .square{
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+        #SkillSet h1{
+            font-size:1.2rem;
+        }
+        /* Main End */
+
+
+    /* footer start */
+
+    footer{
+        height: 4.5rem;
+        column-gap: 4rem;
+    }
+    footer{
+        font-size:0.7rem;
+        height: 4.5rem;
+        column-gap: 2rem;
+    }
+    footer .slash{
+        font-size:1rem;
+    }
+    footer .fas{
+        font-size:1rem;
+    }
+    footer div {
+        padding: 0px 0px;
+    }
+    /* footer end */
+
+}
