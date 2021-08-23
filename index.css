@@ -6,13 +6,7 @@
     overflow:none;
     scroll-behavior: smooth;
 }   
-/* body > * {
-    transition:0.4s;
-    -webkit-transition:0.4;
-    -moz-transition:0.4;
-    -ms-transition:0.4;
-    -o-transition:0.4;
-} */
+
 body{
     overflow:none;
 
@@ -174,17 +168,6 @@ nav ul li a {
     cursor:pointer;
     position:relative;
 }
-/* #icon span{
-    font-size:0.8rem;
-    position:inherit;
-    top:-16px;
-    opacity:0;
-    color:var(--square-btn-color);
-}
-#icon:hover > span{
-    opacity:1;
-} */
-
 /* header end */
 
  
@@ -890,14 +873,6 @@ footer div {
     footer{
         font-size:0.7rem;
         column-gap: 2rem;
-        /* position:fixed; 
-        width:50px;
-        height:100vh;
-        right:0;
-        top:20px;
-        z-index: 2000;
-        background:transparent; */
-
     }
     footer .slash{
         font-size:1rem;
