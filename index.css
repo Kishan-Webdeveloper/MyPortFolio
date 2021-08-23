@@ -739,7 +739,7 @@ footer div {
 
 /* For Large Devices */
 
-@media (min-width: 1024px) and (max-width: 1420px){
+@media (min-width: 1024px) and (max-width: 1430px){
 
     .square{
         width: 1rem;
