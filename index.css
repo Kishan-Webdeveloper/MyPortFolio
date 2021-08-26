@@ -164,23 +164,6 @@ nav ul li a {
     cursor:pointer;
     position:relative;
 }
-/* #icon::after {
-    content: "Click Me";
-    position:absolute;
-    height:10%;
-    width:100%; 
-    opacity: 0;
-    font-size:0.7rem;
-    top: 100%;
-    left: -1%;
-    margin-top:0.5rem;
-}
-#icon:hover:after {
-   opacity: 1;
-}
- */
-
-
 /* header end */
 
  
@@ -321,7 +304,6 @@ z-index: -1;
     line-height:1rem;
 }
 
-
  /* Animating Text*/
 .whiteabsolutebox #boxwithtext  #text-animation{
     display:inline-flex;
@@ -355,7 +337,7 @@ z-index: -1;
     margin-top: 0.3rem;
     border-left:2px solid black;
     left:0%;
-    background: white;
+    background: var(--whitebox-color);
     animation:typing 2s steps(14) infinite;
     -webkit-animation:typing 2s steps(14) infinite;
 }
@@ -408,7 +390,6 @@ footer div a:hover{
 
 /* Media Queries */
 /* For Mobile Devices */
-
 
 @media (min-width:250px) and (max-width:750px){
   
@@ -498,7 +479,7 @@ footer div a:hover{
         z-index:-100;
         padding:2rem;
        padding-top:3rem;
-}
+    }
     
      nav ul li a {
          font-weight: bold;
@@ -596,7 +577,6 @@ footer div a:hover{
 }
 
 
-
     
 /* Medium size devices */
 @media (min-width: 751px) and (max-width: 1024px) {
@@ -622,10 +602,8 @@ footer div a:hover{
         display: block;
     }
     html>body{
-
         overflow:none;
-
- }
+    }
     body{
         margin:0.5px;
     }
@@ -784,7 +762,6 @@ footer div a:hover{
         left: 72%;
         width: 15rem;
         height: 500px;
-
     }
 }
 @media (min-width: 951px) and (max-width: 1024px){
@@ -794,7 +771,6 @@ footer div a:hover{
         left: 68%;
         width: 15rem;
         height: 500px;
-
     }
 }
 
@@ -922,8 +898,6 @@ footer div a:hover{
     }
 
     /* main section end */
-
-
 
     /* footer start */
 
