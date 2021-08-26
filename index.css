@@ -337,7 +337,7 @@ z-index: -1;
     margin-top: 0.3rem;
     border-left:2px solid black;
     left:0%;
-    background: var(--whitebox-color);
+    background-color: var(--whitebox-color);
     animation:typing 2s steps(14) infinite;
     -webkit-animation:typing 2s steps(14) infinite;
 }
@@ -435,7 +435,6 @@ footer div a:hover{
         font-size: 1rem;
         font-weight: bold;
         letter-spacing: 0px;
-        /* text-shadow: 0px 0px 2px rgb(63, 151, 192); */
     }
     .slash{
         font-size:18px;
